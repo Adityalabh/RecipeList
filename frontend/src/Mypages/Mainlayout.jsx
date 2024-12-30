@@ -35,7 +35,7 @@ const MainLayout = () => {
     }
   };
 
-    if(user?._id){
+    if(user){
       useGetUser();
     }
 
