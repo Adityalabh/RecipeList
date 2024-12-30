@@ -35,7 +35,7 @@ const MainLayout = () => {
     }
   };
 
-    if(user?.registeredUser?._id){
+    if(user?._id){
       useGetUser();
     }
 
