@@ -4,7 +4,7 @@ import RecipeCards from "../Mycomponents/RecipeCards";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Button } from "@mui/material";
-import { useGetUser } from "../hook/useGetUSer";
+import {useGetUser} from "../hook/useGetUser.js";
 
 const MainLayout = () => {
   const [recipes, setRecipes] = useState([]);
@@ -35,7 +35,9 @@ const MainLayout = () => {
     }
   };
 
-    useGetUser();
+    if(user?._id){
+      useGetUser();
+    }
 
   useEffect(() => {
     fetchRecipes();
