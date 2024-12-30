@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <div className="flex items-center text-white">
             {/* User Logo */}
-            {user?.registeredUser?._id ? (
+            {user?._id ? (
               <div className="flex items-center">
                 <div className="pr-7 font-semibold hover:underline">
                   <Link to={"/savedRecipe"}>Saved Recipes</Link>

@@ -35,7 +35,7 @@ const MainLayout = () => {
     }
   };
 
-    if(user?.registeredUser?._id){
+    if(user?._id){
       useGetUser();
     }
 
@@ -66,7 +66,7 @@ const MainLayout = () => {
         </div>
 
         <div>
-          {recipes.length === 0 && (
+          {recipes?.length === 0 && (
             <div className="text-2xl text-gray-600 my-3 h-[50vh] flex justify-center items-center ">
               No recipe Found
             </div>
@@ -74,7 +74,7 @@ const MainLayout = () => {
         </div>
 
         <div className="grid sm:grid-cols-2  md:grid-cols-3  lg:grid-cols-3 xl:grid-cols-4 m-3   ">
-          {recipes.length > 0 &&
+          {recipes?.length > 0 &&
             recipes.map((recipe, index) => (
               <div key={index} className="m-2">
                 <div className="p-4 shadow-xl border rounded-lg  hover:shadow-lg transition-shadow max-w-[350px] mx-auto   ">
