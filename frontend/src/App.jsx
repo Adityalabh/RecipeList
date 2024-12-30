@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 import SavedRecipePage from "./Mypages/SavedRecipePage";
 
 
-axios.defaults.baseURL = "http://localhost:3001";
+axios.defaults.baseURL = "https://recipelist-t55s.onrender.com";
 axios.defaults.withCredentials = true;
 
 function App() {

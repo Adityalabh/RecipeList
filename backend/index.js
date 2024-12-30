@@ -14,7 +14,7 @@ app.use(cookieParser());
 
 // const Port = 3000;
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://recipelist-t55s.onrender.com",
     credentials: true
 }));
 
